@@ -57,7 +57,7 @@
   ],
   "commands": [
     {
-      "name": "newBookmark",
+      "name": "addBookmark",
       "title": "Add Bookmark to Shiori",
       "description": "Add a bookmark to Shiori",
       "mode": "view"

@@ -3,6 +3,7 @@
   "name": "shiori",
   "title": "Shiori",
   "description": "Interact with Shiori the bookmark manager",
+  "version": "0.1.0",
   "icon": "shiori-icon.png",
   "author": "namiwang",
   "categories": [

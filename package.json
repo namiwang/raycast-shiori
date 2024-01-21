@@ -9,16 +9,10 @@
     "Productivity"
   ],
   "license": "MIT",
-  "commands": [
-    {
-      "name": "index",
-      "title": "Add Bookmark",
-      "description": "TODO",
-      "mode": "view"
-    }
-  ],
+  "type": "module",
   "dependencies": {
-    "@raycast/api": "^1.65.1"
+    "@raycast/api": "^1.65.1",
+    "got": "^14.0.0"
   },
   "devDependencies": {
     "@raycast/eslint-config": "^1.0.6",
@@ -34,5 +28,39 @@
     "fix-lint": "ray lint --fix",
     "lint": "ray lint",
     "publish": "npx @raycast/api@latest publish"
-  }
+  },
+  "preferences": [
+    {
+      "name": "hostUrl",
+      "title": "Shiori instance URL",
+      "description": "URL for your Shiori instance",
+      "placeholder": "URL for your Shiori instance",
+      "type": "textfield",
+      "required": true
+    },
+    {
+      "name": "username",
+      "title": "Username",
+      "description": "Enter your Shiori username",
+      "placeholder": "Your Shiori username",
+      "type": "textfield",
+      "required": true
+    },
+    {
+      "name": "password",
+      "title": "Password",
+      "description": "Enter your Shiori password",
+      "placeholder": "Your Shiori password",
+      "type": "password",
+      "required": true
+    }
+  ],
+  "commands": [
+    {
+      "name": "newBookmark",
+      "title": "Add Bookmark to Shiori",
+      "description": "Add a bookmark to Shiori",
+      "mode": "view"
+    }
+  ]
 }
